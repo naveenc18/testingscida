@@ -23,10 +23,10 @@ class Worker:
         if scida_api_base:
             scida_rest_api.Configuration.get_default().host = scida_api_base
 
-        self.age_cohort_label = scida.label_by_id("age-cohort")
+        self.age_cohort_label = scida.label_by_id("age-cohort-test")
         if not self.age_cohort_label.exists():
             self.age_cohort_label = scida.create_new_label(
-                "age-cohort", "Age cohort", "Describes the age cohort of the subject"
+                "age-cohort-test", "Age cohort Test", "Describes the age cohort of the subject(testing)"
             )
 
     def work(self, item_id, dataset_id, _execution_id):
