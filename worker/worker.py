@@ -8,9 +8,9 @@ class Worker:
         self.age_cohort_label = None
         self.age_label = scida.tag("0010", "1010")
         self.cohorts = {
-            "toddler": (0, 3),
-            "preschooler": (4, 5),
-            "school-age": (6, 12),
+            "toddler": (0, 2),
+            "preschooler": (3, 4),
+            "school-age": (5, 12),
             "teen": (13, 18),
             "young-adult": (19, 39),
             "middle-aged": (40, 64),
